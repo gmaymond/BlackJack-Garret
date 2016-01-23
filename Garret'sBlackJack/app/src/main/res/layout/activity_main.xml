@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tableGreen"
+    android:paddingBottom="@dimen/activity_vertical_custom_margin"
+    android:paddingLeft="@dimen/activity_horizontal_custom_margin"
+    android:paddingRight="@dimen/activity_horizontal_custom_margin"
+    android:paddingTop="@dimen/activity_vertical_custom_margin"
+    tools:context="com.example.garret_m_aymond.garretsblackjack.MainActivity">
+
+    <Button
+        android:id="@+id/hitBtn"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="Hit"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/stayBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hitBtn"
+        android:layout_centerHorizontal="true"
+        android:singleLine="true"
+        android:text="Stay"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/dealBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/hitBtn"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="Deal"
+        android:visibility="visible" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="108dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:orientation="horizontal"
+        android:weightSum="5">
+
+        <ImageView
+            android:id="@+id/firstcardImg"
+            android:layout_width="0dp"
+            android:layout_height="108dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="8dp"
+            android:layout_weight="1"
+            android:background="@color/emptyCardSlotGreen" />
+
+        <ImageView
+            android:id="@+id/secondcardImg"
+            android:layout_width="0dp"
+            android:layout_height="108dp"
+            android:layout_marginRight="8dp"
+            android:layout_weight="1"
+            android:background="@color/emptyCardSlotGreen" />
+
+        <ImageView
+            android:id="@+id/thirdcardImg"
+            android:layout_width="0dp"
+            android:layout_height="108dp"
+            android:layout_marginRight="8dp"
+            android:layout_weight="1"
+            android:background="@color/emptyCardSlotGreen"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/forthcardImg"
+            android:layout_width="0dp"
+            android:layout_height="108dp"
+            android:layout_marginRight="8dp"
+            android:layout_weight="1"
+            android:background="@color/emptyCardSlotGreen"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/fifthcardImg"
+            android:layout_width="0dp"
+            android:layout_height="108dp"
+            android:layout_weight="1"
+            android:background="@color/emptyCardSlotGreen"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <!--Dealer's Deck-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="108dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:gravity="right"
+        android:orientation="horizontal"
+        android:weightSum="5">
+
+        <ImageView
+            android:id="@+id/dealerfirstcardImg"
+            android:layout_width="0dp"
+            android:layout_height="108dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="8dp"
+            android:layout_weight="1"
+            android:background="@color/emptyCardSlotGreen" />
+
+        <ImageView
+            android:id="@+id/dealersecondcardImg"
+            android:layout_width="0dp"
+            android:layout_height="108dp"
+            android:layout_marginRight="8dp"
+            android:layout_weight="1"
+            android:background="@color/emptyCardSlotGreen" />
+
+        <ImageView
+            android:id="@+id/dealerthirdcardImg"
+            android:layout_width="0dp"
+            android:layout_height="108dp"
+            android:layout_marginRight="8dp"
+            android:layout_weight="1"
+            android:background="@color/emptyCardSlotGreen"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/dealerforthcardImg"
+            android:layout_width="0dp"
+            android:layout_height="108dp"
+            android:layout_marginRight="8dp"
+            android:layout_weight="1"
+            android:background="@color/emptyCardSlotGreen"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/dealerfifthcardImg"
+            android:layout_width="0dp"
+            android:layout_height="108dp"
+            android:layout_weight="1"
+            android:background="@color/emptyCardSlotGreen"
+            android:visibility="gone" />
+    </LinearLayout>
+</RelativeLayout>

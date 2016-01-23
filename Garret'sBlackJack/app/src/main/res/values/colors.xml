@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#10ae02</color>
+    <color name="colorPrimaryDark">#008705</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="tableGreen">#126204</color>
+    <color name="emptyCardSlotGreen">#228800</color>
+</resources>
